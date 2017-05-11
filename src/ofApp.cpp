@@ -12,10 +12,10 @@ std::uniform_int_distribution<> xaxis(0, 1200);
 std::uniform_int_distribution<> yaxis(0,  970);
 
 for(int i=0; i<20; i++){
-	
-	std::cout<< xaxis(gen);
-	std::cout<< yaxis(gen);	
-	std::cout<<jewel.load("diamond.png");
+    jewel.load("diamond.png");	
+	x = xaxis(gen);
+	y = yaxis(gen);	
+
 }
 
 }
