@@ -4,18 +4,18 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
 	
-std::random_device x; 
-std::random_device y;
-std::mt19937 gen1(x());
-std::mt19937 gen2(y());
+std::random_device rd; 
+std::mt19937 gen(rd());
+
 
 std::uniform_int_distribution<> xaxis(0, 1200);
 std::uniform_int_distribution<> yaxis(0,  970);
 
 for(int i=0; i<20; i++){
-	jewel.load("diamond.png");
-	std::cout<< xaxis(gen1);
-	std::cout<< yaxis(gen2);	
+	
+	std::cout<< xaxis(gen);
+	std::cout<< yaxis(gen);	
+	std::cout<<jewel.load("diamond.png");
 }
 
 }
