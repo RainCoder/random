@@ -13,8 +13,8 @@ std::uniform_int_distribution<> yaxis(0,  970);
 
 for(int i=0; i<20; i++){
     jewel.load("diamond.png");	
-	int X = xaxis(gen);
-	int Y = yaxis(gen);	
+	X.push_back(xaxis(gen));
+	Y.push_back(yaxis(gen));	
 
 }
 
