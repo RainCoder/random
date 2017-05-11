@@ -12,7 +12,7 @@ std::uniform_int_distribution<> uniformxaxis(0, 1200);
 std::uniform_int_distribution<> uniformyaxis(0,  970);
 
 
-std::normal_distribution<float> normxaxis(1000,15);
+std::normal_distribution<float> normxaxis(1000,50);
 std::normal_distribution<float> normyaxis(800,15);
 
 for(int i=0; i<20; i++){
